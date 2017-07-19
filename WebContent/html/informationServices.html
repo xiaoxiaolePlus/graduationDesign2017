@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="../css/informationServices.css">
+
+<div class="per personalCenter_left" title="返回统计表"></div>
+<div class="contributionRecordBox" id="fir">
+    <div class="contributionSearch">
+        筛选：
+        <select name="contributionSearch" id="contributionSearchSelect">
+            <option value="0">选择学号/学院</option>
+            <option value="studentNum">按学号查找</option>
+            <option value="academyName">按学院查找</option>
+        </select>
+        <input type="text" id="contributionSearchInput" placeholder="请输入学号" disabled>
+        <select name="college" id="inputContentTargetCollege" class="inputContentTargetCollege">
+            <option value="0">请选择学院</option>
+            <option value="1">材料科学与工程学院</option>
+            <option value="2">计算机与通信学院</option>
+            <option value="3">电气工程与信息工程学院</option>
+            <option value="4">机电工程学院</option>
+            <option value="5">理学院</option>
+            <option value="6">生命科学与工程学院</option>
+            <option value="7">设计艺术学院</option>
+            <option value="8">文学院 国际教育学院</option>
+            <option value="9">能源与动力工程学院</option>
+            <option value="10">石油化工学院</option>
+            <option value="11">土木工程学院</option>
+            <option value="12">经济管理学院</option>
+            <option value="13">外国语学院</option>
+        </select>
+        <input type="text" id="contributionSearchYear" placeholder="输入年级查询">
+        <select name="contributionSearch" id="contributionSearchFeeName">
+            <option value="0">选择查询的费用</option>
+            <option value="学费">按学费查找</option>
+            <option value="住宿费">按住宿费查找</option>
+            <option value="体检费">按体检费查找</option>
+            <option value="医保费">按医保费查找</option>
+            <option value="补考费">按补考费查找</option>
+            <option value="重修费">按重修费查找</option>
+            <option value="其他费用">其他费用</option>
+        </select>
+        <input type="checkbox" id="contributionSearchOwe">只显示欠费
+        <input type="button" value="查找" id="contributionSearchBtn">
+
+    </div>
+
+    <div class="contributionRecordBoxTable">
+        <table style="table-layout:fixed;" cellpadding="0" cellspacing="0" id="tables">
+            <tr>
+                <td>输入条件进行筛选查询数据</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<div class="contributionRecordBox" id="showBox"></div>
+<div class="per personalCenter_right" title="生成统计图"></div>
+
+<script src="../js/informationServices.js"></script>
+<script src="../js/codeConversion.js"></script>
+<script src="../js/echarts.common.min.js"></script>

@@ -1,0 +1,42 @@
+﻿<link rel="stylesheet" href="../css/myRecords.css">
+
+<div class="personalCenter_left">
+    <div class="leftTitle" id="contributionRecord">
+        <img src="../img/msg.png" alt="" class="icon">缴费记录
+    </div>
+    <div class="leftTitle" id="arrearsInquiry">
+        <img src="../img/notice.png" alt="" class="icon">欠费查询
+    </div>
+</div>
+<div class="personalCenter_right">
+    <div class="rightContent1 rightContent">
+        <div class="contributionRecordBox">
+            <div class="contributionSearch">
+                筛选：
+                <select name="contributionSearch" id="contributionSearchSelect">
+                    <option value="null"> </option>
+                    <option value="feeName">按费用名称查找</option>
+                    <option value="payDur">按年度查找</option>
+                    <option value="oweFee">按欠费情况查找</option>
+                </select>
+                <input type="text" id="contributionSearchInput">
+                <input type="button" value="查找" id="contributionSearchBtn">
+            </div>
+            <table style="table-layout:fixed;" cellpadding="0" cellspacing="0" id="tables">
+
+            </table>
+        </div>
+    </div>
+    <div class="rightContent2 rightContent">
+        <div class="contributionRecordBox2">
+            <div class="contributionSearch2">
+                以下是全部欠费列表：
+            </div>
+            <table style="table-layout:fixed;" cellpadding="0" cellspacing="0" id="tables2">
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="../js/myRecords.js"></script>

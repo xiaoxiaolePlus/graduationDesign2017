@@ -1,0 +1,78 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: blueviolet;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.wrap {
+    width: 100%;
+    min-height: 700px;
+    /*border: 1px solid red;*/
+    /*background-color: red;*/
+}
+.header {
+    height: 80px;
+    background-color: #afc9d6;
+}
+.headerLogo {
+    width: 60px;
+    margin: 2vh 0 0 2vh;
+}
+.headerTitle {
+    position: absolute;
+    top: 25px;
+    left: 7vw;
+    font-size: 2vw;
+}
+.headerUser,.headerTab {
+    /*border: 1px solid red;*/
+    height: 4vh;
+    position: absolute;
+    text-align: center;
+    line-height: 4vh;
+    background: url("../img/main_title.png") no-repeat center;
+    background-size: 100%;
+    color: white;
+}
+.headerUser {
+    top: 52px;
+    left: 55vw;
+    width: 17vw;
+}
+.quit {
+    height: 2.5vh;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.quit:hover {
+
+}
+.headerTab {
+    top: 52px;
+    left: 70vw;
+    width: 28.5vw;
+    /*border: 1px solid red;*/
+}
+.headerTab .tab {
+    /*border: 1px solid red;*/
+    width: 8.2vw;
+    /*padding: 0 1vw;*/
+    display: inline-block;
+    cursor: pointer;
+}
+.active1 {
+    background: url("../img/main_title_checked.png") no-repeat center;
+    background-size: 100%;
+}
+.headerTab .tab:hover {
+    color: deeppink;
+}
+.mainBody {
+    background-color: #d9ecf8;
+    width: 100%;
+    height: auto;
+    min-height: 622px;
+}

@@ -1,0 +1,53 @@
+.mywrap {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    padding-top: 80px;
+}
+.back {
+    position: absolute;
+    top: 7vh;
+    right: 18.6vw;
+    color: #437389;
+    cursor: pointer;
+}
+.mywrapTitle {
+    height: 70px;
+    background-color: #798d9e;
+    line-height: 70px;
+    font-size: 22px;
+    color: white;
+    padding-left: 50px;
+    border-radius: 7px 7px 0 0;
+    letter-spacing: 10px;
+}
+.paymentBox {
+    height: 300px;
+    background-color: white;
+    border-radius: 0 0 7px 7px;
+    text-align: center;
+    padding-top: 80px;
+}
+.paymentBox > span {
+    font-size: 1.5vw;
+    color: darkslateblue;
+}
+.paymentBox > input, .paymentBox > select {
+    width: 15vw;
+    height: 4vh;
+    margin: 1.5vh;
+    border-radius: 4vh;
+    border: 1px solid lightgray;
+    text-align: center;
+}
+.paymentBox > input:last-child {
+    width: 13vw;
+    margin: 4vh 3vh;
+}
+.other {
+    position: absolute;
+    top: 25.5vh;
+    left: 16vw;
+    width: 13vw !important;
+    display: none;
+}

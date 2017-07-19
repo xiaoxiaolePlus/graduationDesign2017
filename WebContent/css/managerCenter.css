@@ -1,0 +1,231 @@
+.personalCenter_left {
+    background-color: #273246;
+    width: 240px;
+    min-height: 622px;
+}
+.leftTitle {
+    background-color: #35445b;
+    border-top: 1px solid #445c78;
+    height: 45px;
+    line-height: 40px;
+    color: lightgray;
+    text-align: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.leftTitle:last-child {
+    border-bottom: 1px solid #445c78;
+
+}
+.leftTitle:hover {
+    border-right: 5px solid #227efb;
+}
+.active2 {
+    background-color: #83a5be;
+}
+.icon {
+    width: 20px;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+.rightContent {
+    display: none;
+    width: 800px;
+    height: 430px;
+    background-color: white;
+    position: absolute;
+    top: 170px;
+    right: 130px;
+    border-radius: 7px;
+    box-shadow: 0 0 3px lightyellow;
+}
+.rightContent2 {
+    overflow-y: auto;
+}
+.innerBox1 {
+    width: 80%;
+    height: 85%;
+    margin: 5% 10%;
+    line-height: 45px;
+    font-size: 20px;
+}
+.headphoto > img,.innerBox4 > img {
+    position: absolute;
+    top: 130px;
+    right: 80px;
+    width: 200px;
+}
+.innerBox4 {
+    line-height: 60px;
+    font-size: 20px;
+    width: 80%;
+    height: 30%;
+    margin: 15% 10%;
+}
+.innerBox4 > input {
+    border-radius: 3px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid lightgray;
+}
+.P01 {
+    color: orangered;
+    font-size: 13px;
+    margin-left: 5px;
+    display: none;
+}
+#changeBtn {
+    height: 30px;
+    border-radius: 7px;
+    margin-left: 70px;
+}
+.signInBtn {
+    position: absolute;
+    top: -70px;
+    height: 40px;
+    width: 800px;
+}
+.signInBtn > input {
+    padding: 10px 40px;
+    margin-left: 175px;
+    background-color: #227efb;
+    border: 1px solid lightgray;
+    color: white;
+    border-radius: 5px;
+}
+.haveDoIt {
+    background-color: lightgray !important;
+}
+.rightContent3 {
+    margin-top: 40px;
+}
+.addSchedule {
+    position: absolute;
+    top: -70px;
+    height: 40px;
+    width: 800px;
+}
+.addSchedule > input {
+    padding: 10px 40px;
+    margin-left: 500px;
+    background-color: #227efb;
+    border: 1px solid lightgray;
+    color: white;
+    border-radius: 5px;
+}
+.scheduleDetail {
+    display: none;
+    width: 800px;
+    height: 400px;
+    padding-top: 30px;
+    overflow-y: auto;
+}
+.scheduleDetailDate {
+    padding-left: 30px;
+    font-size: 22px;
+}
+.scheduleDetail > ol {
+    padding: 30px 30px 30px 50px;
+    line-height: 25px;
+}
+.scheduleDetail > ol div {
+    display: inline-block;
+}
+.scheduleDetailContent {
+    width: 600px;
+    vertical-align: top;
+}
+.scheduleDetailChecked {
+    color: darkgray;
+}
+.scheduleDetailChecked > input {
+    width: 20px;
+    vertical-align: middle;
+}
+.isChecked {
+    color: black;
+}
+.scheduleMask {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -210px;
+    left: -374px;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 2;
+}
+.scheduleMaskBox {
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border-radius: 7px;
+    margin: 150px auto;
+    text-align: center;
+    z-index: 2;
+}
+#scheduleMaskTime {
+    width: 400px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 30px 0 20px 0;
+}
+#scheduleMaskContent {
+    width: 400px;
+    height: 200px;
+    vertical-align: top;
+    resize: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+#scheduleMaskRemarks {
+    width: 400px;
+    height: 50px;
+    vertical-align: top;
+    resize: none;
+    border-radius: 7px;
+}
+#scheduleMaskBoxBtn,#scheduleMaskBoxQuit {
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    color: dimgray;
+    padding: 5px 20px;
+    margin: 20px 10px 0 10px;
+}
+.paymentWrap {
+    padding: 10px 5px;
+}
+.paymentWrap > table {
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 98%;
+    text-align: center;
+}
+.paymentWrap > table tr {
+    font-size: 1vw;
+    color: grey;
+}
+.paymentWrap > table tr:first-child {
+    font-size: 1.3vw;
+    color: black;
+    background-color: lightgray;
+}
+.paymentWrap > table tr td {
+    padding: 1vh;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.paymentWrap > table tr td:last-child {
+    border-right: none;
+}
+.paymentWrap > table tr:first-child td {
+    border-right: 1px solid whitesmoke;
+}
+.paymentWrap > table tr:first-child td:last-child {
+    border-right: none;
+}

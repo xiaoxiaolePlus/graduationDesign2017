@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>高校缴费管理系统</title>
+ <link rel="stylesheet" href="../css/master_manager.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <img src="../img/schoolLogo.png" alt="校徽" class="headerLogo">
+            <div class="headerTitle">高校缴费管理系统</div>
+            <div class="headerUser">
+                欢迎你，
+                <span id="myName"></span>
+                <span hidden id='myId'>1</span>
+                <a href='/CollegeTuitionManageSys/user/logout.do'><img src="../img/quit.png" alt="退出" class="quit" title="退出"></a>
+            </div>
+            <div class="headerTab">
+                <div class="tab" id="tab_main">个人中心</div>
+                <div class="tab" id="tab_personalCenter">缴费管理</div>
+                <div class="tab" id="tab_forum">查询统计</div>
+            </div>
+        </div>
+        <div class="mainBody" id="mainBody"></div>
+    </div>
+
+</body>
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/master_manager.js"></script>
+</html>

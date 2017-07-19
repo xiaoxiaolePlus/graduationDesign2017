@@ -1,0 +1,112 @@
+/* 容器 */
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/loginBg.jpg") no-repeat center;
+    background-size: 100%;
+}
+/* 蒙版 */
+.wrap .mask {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(80,135,189,0.95);
+}
+/* logo */
+.wrap .logo {
+    color: white;
+    font-size: 2vw;
+    width: 48vw;
+    position: absolute;
+    right: 0;
+    top: 20vh;
+}
+.wrap .logo > img {
+    width: 4vw;
+    vertical-align: middle;
+}
+/* 内容框 */
+.wrap .loginText {
+    border: 2px solid lightgray;
+    width: 35vw;
+    height: 45vh;
+    position: absolute;
+    top: 30vh;
+    right: 25vw;
+    box-shadow: 0 0 3px white;
+    background-color: rgba(255,255,255,0.1);
+}
+.wrap .loginText > div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.wrap .loginText .loginTextLeft {
+    /*border: 2px solid red;*/
+    width: 28%;
+    left: 0;
+}
+.wrap .loginText .loginTextLeft > div {
+    font-size: 2vw;
+    position: absolute;
+    top: 6vh;
+    left: 2vw;
+    writing-mode: tb-rl;
+}
+.wrap .loginText .loginTextLeft > img {
+    width: 35%;
+    position: absolute;
+    top: 45%;
+    right: 0.6vw;
+}
+.wrap .loginText .loginTextRight {
+    width: 70%;
+    right: 0;
+    text-align: center;
+    color: white;
+    padding-top: 3vh;
+}
+.wrap .loginText .loginTextRight > input {
+    width: 70%;
+    border: none;
+    border-radius: 5vh;
+    height: 5vh;
+    margin: 3vh auto 0 auto;
+    text-align: center;
+    letter-spacing: 0.5vw;
+}
+.wrap .loginText .loginTextRight .loginCheck {
+    width: 80%;
+    margin: 3vh auto 0 auto;
+    height: 5vh;
+}
+.wrap .loginText .loginTextRight .loginCheck > div {
+    display: inline-block;
+    padding: 1.2vh 0;
+    font-size: 1vw;
+    width: 40%;
+    margin: 0 0.5vw;
+    border-radius: 5vh;
+}
+.wrap .loginText .loginTextRight .loginCheck .loginCheckUser,.wrap .loginText .loginTextRight .loginCheck .loginCheckManager {
+    background-color: rgba(220,220,220,0.9);
+    color: rgba(55,55,55,0.8);
+}
+.wrap .loginText .loginTextRight .loginCheck .beChecked {
+    background-color: rgba(50,197,50,0.9);
+    color: white;
+}
+.wrap .loginText .loginTextRight > hr {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    margin: 4vh 0;
+}
+.wrap .loginText .loginTextRight > a {
+    margin: 4vh 0.5vw;
+}
+.forgetPassWord,.register {
+    cursor: pointer;
+}

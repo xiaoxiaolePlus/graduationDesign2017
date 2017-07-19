@@ -1,0 +1,158 @@
+.contributionRecordBox {
+    width: 910px;
+    padding: 5vh 5vw;
+    height: 70vh;
+    border-radius: 7px;
+    background-color: rgba(255,255,255,1);
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+    overflow-y: hidden;
+    display: none;
+}
+#fir {
+    display: block;
+}
+/*#showBox {
+    display: block;
+}*/
+.contributionRecordBoxTable {
+    width: 100%;
+    position: relative;
+    margin-top: 10vh;
+    overflow: auto;
+    height: 90%;
+}
+.contributionRecordBoxTable > table {
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+.contributionRecordBoxTable > table tr {
+    font-size: 1vw;
+    color: grey;
+}
+.contributionRecordBoxTable > table tr:first-child {
+    font-size: 1.3vw;
+    color: black;
+    background-color: lightgray;
+}
+.contributionRecordBoxTable > table tr td {
+    padding: 1vh;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.contributionRecordBoxTable > table tr td:last-child {
+    border-right: none;
+}
+.contributionRecordBoxTable > table tr:first-child td {
+    border-right: 1px solid whitesmoke;
+}
+.contributionRecordBoxTable > table tr:first-child td:last-child {
+    border-right: none;
+}
+.contributionSearch {
+    width: 72vw;
+    height: 8vh;
+    border-radius: 5vh;
+    position: fixed;
+    top: 15vh;
+    background: white;
+    left: 10vw;
+    text-align: right;
+    padding-right: 4vw;
+    font-size: 1.3vw;
+    padding-top: 5vh;
+    z-index:99999;
+}
+.contributionSearch > select {
+    width: 10vw;
+    border: 1px solid lightgray;
+    border-radius: 1vh;
+    height: 4vh;
+    text-align: center;
+    -webkit-appearance:none;
+    background: url("../img/select.png") no-repeat scroll right center transparent;
+    padding: 0 1.5vw 0 0.5vw;
+    background-color: white;
+}
+.contributionSearch > input {
+    width: 10vw;
+    border: 1px solid lightgray;
+    border-radius: 1vh;
+    height: 3.8vh;
+    text-align: center;
+}
+.contributionSearch > input[type=checkbox] {
+    width: 2.5vh;
+    height: 2.5vh;
+    vertical-align: middle;
+}
+.contributionSearch > input:last-child {
+    width: 6vw;
+    border: 1px solid lightgray;
+    border-radius: 1vh;
+    height: 4vh;
+    text-align: center;
+}
+#inputContentTargetCollege {
+    display: none;
+}
+.per {
+    width: 50px;
+    position: fixed;
+    margin-top: 220px;
+    height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.per:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+.personalCenter_left {
+    background: url("../img/leftRight.png") no-repeat left;
+    background-size: 200%;
+    margin-left: 50px;
+}
+.personalCenter_right {
+    background: url("../img/leftRight.png") no-repeat right;
+    background-size: 200%;
+    margin-left: 1200px;
+}
+
+.showBox {
+    width: 68vw;
+    height: 69vh;
+    padding: 4vh 1vw 2vh 1vw;
+    border: 2px dotted #a88081;
+    border-radius: 3vh;
+    float: left;
+    margin: 3vh 0 0 3vw;
+    background-color: rgba(255,255,255,0.2) !important;
+}
+.showFont {
+    font-size: 2vw;
+    color: #a88081;
+    line-height: 60vh;
+    text-align: center;
+}
+.condi {
+    display: none;
+}
+.sele {
+    width: 8vw;
+    height: 4vh;
+    border-radius: 4vh;
+    margin: 3vh 3vw;
+}
+.sele:first-child {
+    margin-top: 8vh;
+}
+.inpu {
+    position: absolute;
+    top: 65vh;
+    left: 3vw;
+    border: 1px solid lightgray;
+}

@@ -1,0 +1,573 @@
+<link rel="stylesheet" href="../css/informationManagement.css">
+
+<div class="personalCenter_left">
+    <div class="leftTitle" id="essentialInformation">
+        <img src="../img/attendance.png" alt="" class="icon">信息录入
+    </div>
+    <div class="leftTitle" id="attendanceStatus">
+        <img src="../img/modify.png" alt="" class="icon">信息修改
+    </div>
+    <div class="leftTitle" id="modifyPassword">
+        <img src="../img/notice.png" alt="" class="icon">信息删除
+    </div>
+</div>
+<div class="personalCenter_right">
+    <div class="rightContent1 rightContent">
+            <div class="inputContent">
+                <div class="inputContentName">
+                    <p>缴费项目:</p>
+                    <div class="inputContentNa inputContentName_tuitionFee" id="1">学费</div>
+                    <div class="inputContentNa inputContentName_hotelExpense" id="2">住宿费</div>
+                    <div class="inputContentNa inputContentName_physicalExaminationFee" id="3">体检费</div>
+                    <div class="inputContentNa inputContentName_medicalInsuranceFee" id="4">医保费</div>
+                    <div class="inputContentNa inputContentName_resit" id="5">补考费</div>
+                    <div class="inputContentNa inputContentName_rehabilitationFee" id="6">重修费</div>
+                    <div class="inputContentName_other" id="7">
+                        <input type="text" placeholder="其他(请输入)" id="inputContentName_other">
+                    </div>
+                </div>
+                <div class="inputContentMoney">
+                    <p>缴费金额:</p>
+                    <input type="text" id="inputContentMoney"><span>(单位：元)</span>
+                </div>
+                <div class="inputContentTarget">
+                    <p>缴费对象:</p>
+                    <!-- 年级 -->
+                    <select name="grade" id="inputContentTargetGrade" class="inputContentTargetGrade">
+                        <option value="0">请选择年级</option>
+                        <option value="13">13级</option>
+                        <option value="14">14级</option>
+                        <option value="15">15级</option>
+                        <option value="16">16级</option>
+                        <option value="17">17级</option>
+                    </select>
+
+                    <!-- 学院 -->
+                    <select name="college" id="inputContentTargetCollege0" class="inputContentTargetCollege" disabled>
+                        <option value="0">请选择学院</option>
+                        <option value="3">电气工程与信息工程学院</option>
+                    </select>
+                    <select name="college" id="inputContentTargetCollege" class="inputContentTargetCollege">
+                        <option value="0">请选择学院</option>
+                        <option value="1">材料科学与工程学院</option>
+                        <option value="2">计算机与通信学院</option>
+                        <option value="3">电气工程与信息工程学院</option>
+                        <option value="4">机电工程学院</option>
+                        <option value="5">理学院</option>
+                        <option value="6">生命科学与工程学院</option>
+                        <option value="7">设计艺术学院</option>
+                        <option value="8">文学院 国际教育学院</option>
+                        <option value="9">能源与动力工程学院</option>
+                        <option value="10">石油化工学院</option>
+                        <option value="11">土木工程学院</option>
+                        <option value="12">经济管理学院</option>
+                        <option value="13">外国语学院</option>
+                    </select>
+
+                    <!-- 专业 -->
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty0"
+                            class="inputContentTargetSpecialty"
+                            disabled>
+                        <option value="0">请选择专业</option>
+                        <option value="2">材料成型及控制工程系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty1"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">焊接技术与工程系</option>
+                        <option value="2">材料成型及控制工程系</option>
+                        <option value="3">金属材料工程系</option>
+                        <option value="4">无机非金属材料工程系</option>
+                        <option value="5">高分子材料与工程系</option>
+                        <option value="6">功能材料系冶金工程系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty2"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">计算机科学与技术系</option>
+                        <option value="2">通信工程系</option>
+                        <option value="3">软件工程系</option>
+                        <option value="4">物联网工程系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty3"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">自动化系</option>
+                        <option value="2">电气工程系</option>
+                        <option value="3">电子信息工程系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty4"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">机械设计系</option>
+                        <option value="2">机械制造及自动化系</option>
+                        <option value="3">机电控制及自动化系</option>
+                        <option value="4">工业工程系</option>
+                        <option value="5">纺织工程系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty5"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">工程力学系</option>
+                        <option value="2">应用物理系</option>
+                        <option value="3">应用数学系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty6"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">食品科学工程系</option>
+                        <option value="2">生物工程系</option>
+                        <option value="3">制药工程系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty7"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">建筑学系</option>
+                        <option value="2">工业设计系</option>
+                        <option value="3">城乡规划系</option>
+                        <option value="4">产品设计系</option>
+                        <option value="5">视觉传达系</option>
+                        <option value="6">环境设计系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty8"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">中国语言文学系</option>
+                        <option value="2">留学生教育中心</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty9"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">新能源科学与工程系</option>
+                        <option value="2">水利水电工程系</option>
+                        <option value="3">流体传动与控制系</option>
+                        <option value="4">流体机械及工程系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty10"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">过程装备与控制工程系</option>
+                        <option value="2">化学工程与工艺系</option>
+                        <option value="3">应用化学系</option>
+                        <option value="4">环境工程系</option>
+                        <option value="5">安全工程系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty11"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">建筑工程系</option>
+                        <option value="2">道路工程系</option>
+                        <option value="3">桥梁工程系</option>
+                        <option value="4">岩土与地下工程系</option>
+                        <option value="5">工程管理系</option>
+                        <option value="6">测绘工程系</option>
+                        <option value="7">给水排水系工程系</option>
+                        <option value="8">建筑环境与能源应用工程系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty12"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">市场营销系</option>
+                        <option value="2">财务管理系</option>
+                        <option value="3">金融系</option>
+                        <option value="4">管理科学与工程系</option>
+                        <option value="5">会计系</option>
+                        <option value="6">工商管理系</option>
+                        <option value="7">国际经济与贸易系</option>
+                    </select>
+                    <select name="specialty"
+                            id="inputContentTargetSpecialty13"
+                            class="inputContentTargetSpecialty">
+                        <option value="0">请选择专业</option>
+                        <option value="1">英语系</option>
+                        <option value="2">日语系</option>
+                        <option value="3">俄语系</option>
+                    </select>
+
+                    <!-- 班级 -->
+                    <select name="classes" class="classes" id="inputContentTargetClasses0" disabled>
+                        <option value="0">请选择班级</option>
+                        <option value="1">建筑环境与能源应用工程1班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses11">
+                        <option value="0">请选择班级</option>
+                        <option value="1">金属材料工程1班</option>
+                        <option value="2">金属材料工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses12">
+                        <option value="0">请选择班级</option>
+                        <option value="1">材料成型及控制工程1班</option>
+                        <option value="2">材料成型及控制工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses13">
+                        <option value="0">请选择班级</option>
+                        <option value="1">材料成型及控制工程1班</option>
+                        <option value="2">材料成型及控制工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses14">
+                        <option value="0">请选择班级</option>
+                        <option value="1">无机非金属材料工程1班</option>
+                        <option value="2">无机非金属材料工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses15">
+                        <option value="0">请选择班级</option>
+                        <option value="1">高分子材料与工程1班</option>
+                        <option value="2">高分子材料与工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses16">
+                        <option value="0">请选择班级</option>
+                        <option value="1">功能材料系冶金工程1班</option>
+                        <option value="2">功能材料系冶金工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses21">
+                        <option value="0">请选择班级</option>
+                        <option value="1">计算机科学与技术1班</option>
+                        <option value="2">计算机科学与技术2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses22">
+                        <option value="0">请选择班级</option>
+                        <option value="1">通信工程1班</option>
+                        <option value="2">通信工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses23">
+                        <option value="0">请选择班级</option>
+                        <option value="1">软件工程1班</option>
+                        <option value="2">软件工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses24">
+                        <option value="0">请选择班级</option>
+                        <option value="1">物联网工程1班</option>
+                        <option value="2">物联网工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses31">
+                        <option value="0">请选择班级</option>
+                        <option value="1">自动化1班</option>
+                        <option value="2">自动化2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses32">
+                        <option value="0">请选择班级</option>
+                        <option value="1">电气工程1班</option>
+                        <option value="2">电气工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses33">
+                        <option value="0">请选择班级</option>
+                        <option value="1">电子信息工程1班</option>
+                        <option value="2">电子信息工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses41">
+                        <option value="0">请选择班级</option>
+                        <option value="1">机械设计1班</option>
+                        <option value="2">机械设计2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses42">
+                        <option value="0">请选择班级</option>
+                        <option value="1">机械制造及自动化1班</option>
+                        <option value="2">机械制造及自动化2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses43">
+                        <option value="0">请选择班级</option>
+                        <option value="1">机电控制及自动化1班</option>
+                        <option value="2">机电控制及自动化2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses44">
+                        <option value="0">请选择班级</option>
+                        <option value="1">工业工程1班</option>
+                        <option value="2">工业工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses45">
+                        <option value="0">请选择班级</option>
+                        <option value="1">纺织工程1班</option>
+                        <option value="2">纺织工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses51">
+                        <option value="0">请选择班级</option>
+                        <option value="1">工程力学1班</option>
+                        <option value="2">工程力学2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses52">
+                        <option value="0">请选择班级</option>
+                        <option value="1">应用物理1班</option>
+                        <option value="2">应用物理2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses53">
+                        <option value="0">请选择班级</option>
+                        <option value="1">应用数学1班</option>
+                        <option value="2">应用数学2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses61">
+                        <option value="0">请选择班级</option>
+                        <option value="1">食品科学工程1班</option>
+                        <option value="2">食品科学工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses62">
+                        <option value="0">请选择班级</option>
+                        <option value="1">生物工程1班</option>
+                        <option value="2">生物工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses63">
+                        <option value="0">请选择班级</option>
+                        <option value="1">制药工程1班</option>
+                        <option value="2">制药工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses71">
+                        <option value="0">请选择班级</option>
+                        <option value="1">建筑学1班</option>
+                        <option value="2">建筑学2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses72">
+                        <option value="0">请选择班级</option>
+                        <option value="1">工业设计1班</option>
+                        <option value="2">工业设计2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses73">
+                        <option value="0">请选择班级</option>
+                        <option value="1">城乡规划1班</option>
+                        <option value="2">城乡规划2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses74">
+                        <option value="0">请选择班级</option>
+                        <option value="1">产品设计1班</option>
+                        <option value="2">产品设计2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses75">
+                        <option value="0">请选择班级</option>
+                        <option value="1">视觉传达1班</option>
+                        <option value="2">视觉传达2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses76">
+                        <option value="0">请选择班级</option>
+                        <option value="1">环境设计1班</option>
+                        <option value="2">环境设计2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses81">
+                        <option value="0">请选择班级</option>
+                        <option value="1">中国语言文学1班</option>
+                        <option value="2">中国语言文学2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses82">
+                        <option value="0">请选择班级</option>
+                        <option value="1">留学生1班</option>
+                        <option value="2">留学生2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses91">
+                        <option value="0">请选择班级</option>
+                        <option value="1">新能源科学与工程1班</option>
+                        <option value="2">新能源科学与工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses92">
+                        <option value="0">请选择班级</option>
+                        <option value="1">水利水电工程1班</option>
+                        <option value="2">水利水电工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses93">
+                        <option value="0">请选择班级</option>
+                        <option value="1">流体传动与控制1班</option>
+                        <option value="2">流体传动与控制2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses94">
+                        <option value="0">请选择班级</option>
+                        <option value="1">流体机械及工程1班</option>
+                        <option value="2">流体机械及工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses101">
+                        <option value="0">请选择班级</option>
+                        <option value="1">过程装备与控制工程1班</option>
+                        <option value="2">过程装备与控制工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses102">
+                        <option value="0">请选择班级</option>
+                        <option value="1">化学工程与工艺1班</option>
+                        <option value="2">化学工程与工艺2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses103">
+                        <option value="0">请选择班级</option>
+                        <option value="1">应用化学1班</option>
+                        <option value="2">应用化学2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses104">
+                        <option value="0">请选择班级</option>
+                        <option value="1">环境工程1班</option>
+                        <option value="2">环境工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses105">
+                        <option value="0">请选择班级</option>
+                        <option value="1">安全工程1班</option>
+                        <option value="2">安全工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses111">
+                        <option value="0">请选择班级</option>
+                        <option value="1">建筑工程1班</option>
+                        <option value="2">建筑工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses112">
+                        <option value="0">请选择班级</option>
+                        <option value="1">道路工程1班</option>
+                        <option value="2">道路工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses113">
+                        <option value="0">请选择班级</option>
+                        <option value="1">桥梁工程1班</option>
+                        <option value="2">桥梁工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses114">
+                        <option value="0">请选择班级</option>
+                        <option value="1">岩土与地下工程1班</option>
+                        <option value="2">岩土与地下工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses115">
+                        <option value="0">请选择班级</option>
+                        <option value="1">工程管理1班</option>
+                        <option value="2">工程管理2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses116">
+                        <option value="0">请选择班级</option>
+                        <option value="1">测绘工程1班</option>
+                        <option value="2">测绘工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses117">
+                        <option value="0">请选择班级</option>
+                        <option value="1">给水排水系工程1班</option>
+                        <option value="2">给水排水系工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses118">
+                        <option value="0">请选择班级</option>
+                        <option value="1">建筑环境与能源应用工程1班</option>
+                        <option value="2">建筑环境与能源应用工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses121">
+                        <option value="0">请选择班级</option>
+                        <option value="1">市场营销1班</option>
+                        <option value="2">市场营销2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses122">
+                        <option value="0">请选择班级</option>
+                        <option value="1">财务管理1班</option>
+                        <option value="2">财务管理2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses123">
+                        <option value="0">请选择班级</option>
+                        <option value="1">金融1班</option>
+                        <option value="2">金融2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses124">
+                        <option value="0">请选择班级</option>
+                        <option value="1">管理科学与工程1班</option>
+                        <option value="2">管理科学与工程2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses125">
+                        <option value="0">请选择班级</option>
+                        <option value="1">会计1班</option>
+                        <option value="2">会计2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses126">
+                        <option value="0">请选择班级</option>
+                        <option value="1">工商管理1班</option>
+                        <option value="2">工商管理2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses127">
+                        <option value="0">请选择班级</option>
+                        <option value="1">国际经济与贸易1班</option>
+                        <option value="2">国际经济与贸易2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses131">
+                        <option value="0">请选择班级</option>
+                        <option value="1">英语1班</option>
+                        <option value="2">英语2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses132">
+                        <option value="0">请选择班级</option>
+                        <option value="1">日语1班</option>
+                        <option value="2">日语2班</option>
+                    </select>
+                    <select name="classes" class="classes" id="inputContentTargetClasses133">
+                        <option value="0">请选择班级</option>
+                        <option value="1">俄语1班</option>
+                        <option value="2">俄语2班</option>
+                    </select>
+
+                    <!-- 学号 -->
+                    <br><span>或</span>
+                    <input type="text"
+                           placeholder="输入学号录入"
+                           id="inputContentTargetStudentId"
+                           class="inputContentTargetStudentId">
+                </div>
+                <div class="inputContentTime">
+                    <p>缴费时间:</p>
+                    <input type="text" id="inputContentTime" placeholder="输入格式：XXXX">
+                </div>
+                <input type="button" value="确认录入" class="inputContentBtn" id="inputContentBtn">
+            </div>
+            <div class="showContent">
+                <div class="showTextContent">
+                    <div class="showTextTitle">
+                        新录入的缴费内容：
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="rightContent2 rightContent">
+        <div class="inputContent1">
+            <div class="inputTitle1">输入要减免的学生学号：</div>
+            <input type="text" placeholder="输入学号" class="jobNumText" id="jobNumText">
+            <input type="button" value="确定" class="jobNumBtn" id="jobNumBtn">
+            <div class="addReduceMes">添加减免费用：</div>
+            <input type="text" placeholder="输入要减免项的id" class="moneyText0" id="proText">
+            <input type="text" placeholder="输入金额" class="moneyText" id="moneyText">
+            <input type="button" value="确定" class="moneyBtn" id="moneyBtn">
+        </div>
+        <div class="showContent1">
+            <div class="showTextContent1">
+                <div class="oldBox showTextTitle">
+                    学生信息：
+                </div>
+                <div class="oldBox showJob">
+                    <table style="table-layout:fixed;" cellpadding="0" cellspacing="0" class="showJobTable" id="showJobTable">
+
+                    </table>
+                </div>
+                <div class="newBox showTextTitle2">
+                    修改后的信息：
+                </div>
+                <div class="newBox showJob1">
+                    <table style="table-layout:fixed;" cellpadding="0" cellspacing="0" class="showJobTable" id="showJobTable1">
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="rightContent4 rightContent">
+        <div class="contentBox">
+            <div class="firInput">
+                <p>请输入要删除的学号：</p>
+                <input type="text" placeholder="输入学号" class="fieInputText" id="fieInputText">
+                <input type="button" value="确定" class="firBtn" id="firBtn">
+            </div>
+            <div class="secBox">
+                <a class="backUp">返回上一级</a>
+                <table style="table-layout:fixed;" cellpadding="0" cellspacing="0" class="showJobTable showJobTable2" id="showJobTable2">
+
+                </table>
+                <input type="button" value="确定删除" id="secBtn" class="secBtn">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/informationManagement.js"></script>
+<script src="../js/codeConversion.js"></script>

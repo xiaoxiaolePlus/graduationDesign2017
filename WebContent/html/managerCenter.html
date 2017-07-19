@@ -1,0 +1,40 @@
+﻿<link rel="stylesheet" href="../css/managerCenter.css">
+
+<div class="personalCenter_left">
+    <div class="leftTitle" id="essentialInformation">
+        <img src="../img/essential.png" alt="" class="icon">基本信息
+    </div>
+    <div class="leftTitle" id="modifyPassword">
+        <img src="../img/modify.png" alt="" class="icon">修改密码
+    </div>
+</div>
+<div class="personalCenter_right">
+    <div class="rightContent1 rightContent">
+        <div class="innerBox1">
+            姓名：<span class="name"></span><br>
+            工号：<span class="jobNum"></span><br>
+            部门：<span class="apartment"></span><br>
+            邮箱：<span class="email"></span><br>
+            手机：<span class="phoneNum"></span><br>
+            <div class="headphoto"><img src="../img/schoolLogo.png" alt="校徽"></div>
+        </div>
+    </div>
+    <div class="rightContent2 rightContent">
+        <div class="paymentWrap">
+            <table style="table-layout:fixed;" cellpadding="0" cellspacing="0" id="tables">
+
+            </table>
+        </div>
+    </div>
+    <div class="rightContent4 rightContent">
+        <div class="innerBox4">
+            输入原密码：<input type="password" id="oldPWD"><br>
+            输入新密码：<input type="password" id="newPWD"><br>
+            确认新密码：<input type="password" id="surePWD"><span class="P01">两次密码输入不同！</span><br>
+            <input type="button" value="确认修改" id="changeBtn">
+            <img src="../img/schoolLogo.png" alt="校徽">
+        </div>
+    </div>
+</div>
+
+<script src="../js/managerCenter.js"></script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- http://localhost:8080/CollegeTuitionManageSys/login.html -->
+</head>
+<body>
+    <div class="wrap">
+        <div class="mask"></div>
+        <div class="logo">
+            <img src="img/logoIcon.png" alt="标志">高校缴费管理系统
+        </div>
+        <div class="loginText">
+            <div class="loginTextLeft">
+                <div>新的一天从这里开始</div>
+                <img src="img/goIcon.png" alt="箭头">
+            </div>
+            <div class="loginTextRight">
+                <input type="text" placeholder="用户名" id="jobNum">
+                <input type="password" placeholder="密码" id="password">
+                <div class="loginCheck">
+                    <div id="loginCheckUser" class="loginCheckUser">用户</div>
+                    <div id="loginCheckManager" class="loginCheckManager">管理员</div>
+                </div>
+                <input type="button" value="登录" onclick="login();">
+                <br>
+                <hr>
+                <a class="forgetPassWord" onclick="window.location.href = 'html/forgetPassword.html';">忘记密码</a>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/login.js"></script>
+</html>

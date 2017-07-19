@@ -1,0 +1,412 @@
+.personalCenter_left {
+    background-color: #273246;
+    width: 240px;
+    min-height: 622px;
+}
+.leftTitle {
+    background-color: #35445b;
+    border-top: 1px solid #445c78;
+    height: 45px;
+    line-height: 40px;
+    color: lightgray;
+    text-align: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.leftTitle:last-child {
+    border-bottom: 1px solid #445c78;
+
+}
+.leftTitle:hover {
+    border-right: 5px solid #227efb;
+}
+.active2 {
+    background-color: #83a5be;
+}
+.icon {
+    width: 20px;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+.rightContent {
+    display: none;
+    background-color: white;
+    position: absolute;
+    border-radius: 7px;
+    box-shadow: 0 0 3px lightyellow;
+    width: 1000px;
+    height: 550px;
+    top: 120px;
+    right: 30px;
+}
+.innerBox1 {
+    width: 80%;
+    height: 85%;
+    margin: 5% 10%;
+    line-height: 60px;
+    font-size: 20px;
+}
+.headphoto > img,.innerBox4 > img {
+    position: absolute;
+    top: 130px;
+    right: 80px;
+    width: 200px;
+}
+.innerBox4 {
+    line-height: 60px;
+    font-size: 20px;
+    width: 80%;
+    height: 30%;
+    margin: 15% 10%;
+}
+.innerBox4 > input {
+    border-radius: 3px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid lightgray;
+}
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/informationManagementBg.jpg") no-repeat center;
+    background-size: 100%;
+}
+.titles {
+    position: absolute;
+    top: 3vh;
+    left: 10vw;
+    font-size: 2vw;
+    color: #dddddd;
+    letter-spacing: 0.2vw;
+}
+.back {
+    position: absolute;
+    top: 3vh;
+    right: 5vw;
+    color: rgb(122,111,83);
+    cursor: pointer;
+}
+.back > img {
+    width: 2.5vh;
+    vertical-align: middle;
+    margin-right: 0.5vh;
+}
+.inputContent,.inputContent1,.inputContent2 {
+    border: 2px dotted #b40e0e;
+    border-radius: 5vw;
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    height: 90%;
+}
+.inputContent1 {
+    width: 20%;
+    margin-left: 3%;
+}
+.inputContent > div {
+    /*border: 1px solid red;*/
+    display: inline-block;
+    color: #b40e0e;
+    font-size: 1.6vw;
+    position: relative;
+    width: 82%;
+    top: 4vh;
+    left: 3vw;
+    margin: 0 0 3vh 0;
+}
+.inputContent1 > div {
+    font-size: 1.3vw;
+    width: 94%;
+}
+.input1ContentName {
+    top: 1vw;
+    left: 3vw;
+}
+.inputContent > div > p {
+    margin-bottom: 6px;
+}
+.inputContentName > div {
+    font-size: 1.2vw;
+    color: gray;
+    padding: 3px 12px;
+    display: inline-block;
+    margin: 3px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3vh;
+    height: 3vh;
+    cursor:pointer;
+}
+.inputContentName > div:last-child {
+    width: 9vw;
+    cursor: auto;
+}
+.inputContentName input {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.active4 {
+    background-color: rgba(60,194,56,0.8) !important;
+    color: white !important;
+}
+.active4 > input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: white;
+}
+.inputContentMoney > input,.inputContentTime > input {
+    height: 4vh;
+    border-radius: 4vh;
+    border: 1px solid lightgray;
+    margin-top: 1vh;
+    text-align: center;
+    width: 12vw;
+}
+.inputContentMoney > span,.inputContentTarget > span {
+    color: dimgray;
+    font-size: 1.2vw;
+    margin: 1vw;
+}
+.inputContentTarget > select {
+    border: 1px solid lightgray;
+    border-radius: 1vh;
+    height: 4vh;
+    text-align: center;
+    -webkit-appearance:none;
+    background: url("../img/select.png") no-repeat scroll right center transparent;
+    padding: 0 1.5vw 0 0.5vw;
+    background-color: white;
+    margin: 0.5vh 0;
+    display: none;
+}
+.inputContentTarget {
+    width: 28vw !important;
+}
+.inputContentTarget > input {
+    border: 1px solid lightgray;
+    border-radius: 1vh;
+    height: 4vh;
+    text-align: center;
+}
+#inputContentTargetGrade,#inputContentTargetCollege0,#inputContentTargetSpecialty0,#inputContentTargetClasses0 {
+    display: inline-block;
+}
+.inputContentBtn {
+    position: absolute;
+    top: 66vh;
+    left: 26vw;
+    width: 8vw;
+    height: 4vh;
+    border: 1px solid lightgray;
+    border-radius: 4vh;
+    background-color: rgba(60,96,250,0.8);
+    color: white;
+    cursor:pointer;
+}
+.showContent,.showContent1 {
+    border: 2px dotted #b40e0e;
+    border-radius: 5vw;
+    width: 40%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 2.5%;
+    height: 90%;
+}
+.showContent1 {
+    width: 70%;
+}
+.showTextContent,.showTextContent1 {
+    width: 26vw;
+    height: 62vh;
+    overflow-y: auto;
+    overflow-x: inherit;
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    padding-right: 2.5vw;
+}
+.showTextContent1 {
+    width: 48vw;
+}
+.showTextContent > p {
+    margin: 2vh 0;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    color: #19495a;
+}
+.showTextTitle,.showTextTitle2 {
+    font-size:1.7vw;
+    color:#b40e0e;
+}
+.showTextTitle2 {
+    position: absolute;
+    top: 0;
+}
+.showJob,.showJob1 {
+    width: 48vw;
+    height: 48vh;
+    margin: 2.5vh 0.5vw 0 0;
+    border-radius: 5px;
+    padding: 2vh 1vw;
+    overflow: auto;
+}
+.showJob1 {
+    margin-top: 8vh;
+}
+.inputTitle1 {
+    font-size:1.7vw;
+    color:#b40e0e;
+    margin: 5vh 2vh;
+}
+.jobNumText {
+    border: 1px solid lightgray;
+    height: 4vh;
+    border-radius: 4vh;
+    width: 13vw;
+    text-align: center;
+    position: absolute;
+    top: 16vh;
+    left: 4vw;
+}
+.jobNumBtn {
+    border: 1px solid lightgray;
+    height: 4vh;
+    border-radius: 4vh;
+    width: 9vw;
+    text-align: center;
+    position: absolute;
+    top: 23vh;
+    left: 6vw;
+}
+.moneyText0 {
+    border: 1px solid lightgray;
+    height: 4vh;
+    border-radius: 4vh;
+    width: 13vw;
+    text-align: center;
+    position: absolute;
+    top: 40vh;
+    left: 4vw;
+}
+.moneyText {
+    border: 1px solid lightgray;
+    height: 4vh;
+    border-radius: 4vh;
+    width: 13vw;
+    text-align: center;
+    position: absolute;
+    top: 47.5vh;
+    left: 4vw;
+}
+.moneyBtn {
+    border: 1px solid lightgray;
+    height: 4vh;
+    border-radius: 4vh;
+    width: 9vw;
+    text-align: center;
+    position: absolute;
+    top: 55vh;
+    left: 6vw;
+}
+.addReduceMes {
+    font-size:1.7vw;
+    color:#b40e0e;
+    margin: 20vh 7vh;
+}
+.newBox {
+    display: none;
+}
+.contentBox {
+    border: 2px dotted #b40e0e;
+    border-radius: 5px;
+    width: 90%;
+    height: 82%;
+    margin: 5%;
+    overflow: hidden;
+}
+.firInput {
+    color: #b40e0e;
+    font-size: 2vw;
+    text-align: center;
+    margin: 18% 0;
+}
+.fieInputText {
+    width: 18vw;
+    height: 5vh;
+    border-radius: 5vh;
+    border: 1px solid lightgray;
+    text-align: center;
+    margin: 5% 1%;
+}
+.firBtn {
+    width: 8vw;
+    height: 5vh;
+    border-radius: 5vh;
+    border: 1px solid lightgray;
+    text-align: center;
+    margin: 5% 0;
+}
+.showJobTable {
+    /*border: 1px solid red;*/
+    border-radius: 5px;
+    position: relative;
+    margin-top: -2vh;
+    margin-left: -1vw;
+    text-align: center;
+}
+.showJobTable2 {
+    width: 100%;
+    margin: 0;
+}
+.showJobTable tr {
+    font-size: 1vw;
+    color: grey;
+}
+.showJobTable tr:first-child {
+    font-size: 1.3vw;
+    color: black;
+    background-color: lightgray;
+}
+.showJobTable2 tr:first-child {
+    font-size: 1vw;
+}
+.showJobTable tr td {
+    padding: 1vh;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.showJobTable tr td:last-child {
+    border-right: none;
+}
+.showJobTable tr:first-child td {
+    border-right: 1px solid whitesmoke;
+}
+.showJobTable tr:first-child td:last-child {
+    border-right: none;
+}
+
+.secBox {
+    display: none;
+    overflow: auto;
+    height:90%;
+}
+/*.firInput {*/
+/*display: none;*/
+/*}*/
+.backUp {
+    position: absolute;
+    top: 3vh;
+    right: 5vw;
+    cursor: pointer;
+}
+.secBtn {
+    width: 7vw;
+    height: 4vh;
+    border: 1px solid lightgrey;
+    border-radius: 4vh;
+    position: absolute;
+    bottom: 7.5vh;
+    left: 37vw;
+}

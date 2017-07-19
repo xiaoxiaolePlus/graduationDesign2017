@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缴费</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+<body>
+<div class="mywrap">
+    <div class="mywrapTitle">缴费</div>
+    <div class="paymentBox">
+        <span>缴费金额：</span>
+        <input type="text" placeholder="输入缴费金额" class="paymentMoney" id="paymentMoney">
+        <br>
+        <span>缴费年度：</span>
+        <input type="text" placeholder="输入格式（XXXX）" class="paymentYear" id="paymentYear">
+        <br>
+        <span>费用名称：</span>
+        <select name="contributionSearch" id="paymentFeeName">
+            <option value="0"></option>
+            <option value="学费">学费</option>
+            <option value="住宿费">住宿费</option>
+            <option value="体检费">体检费</option>
+            <option value="医保费">医保费</option>
+            <option value="补考费">补考费</option>
+            <option value="重修费">重修费</option>
+            <option value="1">其他费用</option>
+        </select>
+        <br>
+        <input type="text" class="other" placeholder="输入费用名称" id="paymentFeeNameOther">
+        <br>
+        <input type="button" value="确认缴费" class="sure" id="paymentSure">
+    </div>
+</div>
+
+</body>
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/payment.js"></script>
+</html>
